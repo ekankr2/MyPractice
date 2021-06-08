@@ -27,7 +27,7 @@ class Ticket{
         MixGroup();// 조 불러와서
         System.out.print(group+"조 ");// x조
         System.out.print("[");
-        for(int k = 0 ; k<5; k++){
+        for(int k = 0 ; k<6; k++){
             System.out.printf("%4d",numbers[k]);//숫자간 4칸 확보
         }
         System.out.print("   ]");
