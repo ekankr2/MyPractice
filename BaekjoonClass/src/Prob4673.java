@@ -1,45 +1,57 @@
+import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Scanner;
 
 class SelfNumber {
-    int[] n;
-    int count;
-    int[] arr;
-    boolean[] selfNumberCount;
-
+    int[] NotSelfNum;
+    int[] NotSelfNumClone;
+    int[] targetNum;
+    Integer[] selfNum;
+    ArrayList<Integer> target;
 
     public SelfNumber() {
-        arr = new int[100];
-        n = new int[arr.length];
-        selfNumberCount = new boolean[arr.length];
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = i + 1;
-
+        targetNum = new int[10000];
+        NotSelfNum = new int[targetNum.length];
+        NotSelfNumClone = new int[targetNum.length];
+        for (int i = 0; i < targetNum.length; i++) {
+            targetNum[i] = i;
+        /*arr [0] [1] [2] [3] [4] [5] ... [99]
+               0   1   2   3   4   5       99
+         */
         }
     }
 
-    public void calNum() {
-        for (int i = 0; i < arr.length; i++) {
-                n[i] = arr[i] + arr[i] / 10 + arr[i] % 10;
+    public void calNum() {//notselfnumber 계산
+        for (int i = 0; i < targetNum.length; i++) {
+            if (targetNum[i] < 100) {
+                NotSelfNum[i] = targetNum[i] + targetNum[i] / 10 + targetNum[i] % 10;
+            } else if (targetNum[i] >= 100 && targetNum[i] < 1000) {
+                NotSelfNum[i] = targetNum[i] + targetNum[i] / 100 + targetNum[i] % 100
+                +targetNum[i] / 10 + targetNum[i] % 10;
+            } else if (targetNum[i] >= 1000 && targetNum[i] <= 10000) {
+                NotSelfNum[i] = targetNum[i] + targetNum[i] / 1000 + targetNum[i] % 1000+
+                targetNum[i] / 100 + targetNum[i] % 100
+                        +targetNum[i] / 10 + targetNum[i] % 10;
+            }
+            Arrays.sort(NotSelfNum);//정렬
+            for (int j = 0; j < targetNum.length; j++) {
+                if (NotSelfNum[j] < targetNum.length) {
+                    NotSelfNumClone[j] = NotSelfNum[j];
+                }
+            }
         }
-        Arrays.sort(n);
-        for (int i = 0; i < arr.length; i++) {
-            //if(n[i]>100){
-            //n[i] = 0; }
-            System.out.println(n[i]);
-        }
-
     }
-    public void countSelfNum(){
-        for (int i = 0; i < arr.length; i++){
-            if(n[i] == 0){
-                selfNumberCount[i] = true;
-            }
-            if(selfNumberCount[i] == true){
-                count++;
-            }
+    public void getSelfNumber(){
+        target = new ArrayList<>();
+        for(int i = 0; i<targetNum.length;i++){
+            target.add(targetNum[i]);
+        }for(int j = 0 ;j<targetNum.length;j++){
+        target.remove(Integer.valueOf(NotSelfNumClone[j]));}
+    }
+    public void printSelfNum(){
+        selfNum = target.toArray(new Integer[target.size()]);
+        for(int i =0; i<selfNum.length;i++){
+            System.out.println(selfNum[i]);
         }
-        System.out.println(count);
     }
 }
 
@@ -48,6 +60,8 @@ public class Prob4673 {
     public static void main(String[] args) {
         SelfNumber sn = new SelfNumber();
         sn.calNum();
-        sn.countSelfNum();
+        sn.getSelfNumber();
+        sn.printSelfNum();
+
     }
 }
