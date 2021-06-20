@@ -4,7 +4,6 @@ public class Prob2675 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int T = scan.nextInt();
-        String P;
         for(int i = 0 ; i < T ; i++){
             int R = scan.nextInt();
             String S = scan.next();
