@@ -14,4 +14,11 @@ public class FirstController {
 
         return "hiHTML";
     }
+
+    @GetMapping("/animatedLogin")
+    public String getAnimatedLogin () {
+        log.info("getAnimatedLogin");
+
+        return "/css/animatedLogin";
+    }
 }
