@@ -1,8 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
 
 * {
-    font-family: 'Ubuntu', sans-serif;
     margin: 0;
     padding: 0;
     text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar{
+    position: fixed;
+    background-color: red;
+    width: 100%;
+    padding: 30px 0;
+    top: 0;
+    z-index: 999;
+    transition: .3s linear;
+}
+
+.inner-width {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 40px;
+}
+
+.navbar .inner-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
