@@ -12,7 +12,7 @@ public class FirstController {
     public String firstIndex () {
         log.info("firstIndex() 실행");
 
-        return "hiHTML";
+        return "index";
     }
 
     @GetMapping("/animatedLogin")
