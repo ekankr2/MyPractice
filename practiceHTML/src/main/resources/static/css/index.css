@@ -15,6 +15,7 @@
     padding: 30px 0;
     top: 0;
     z-index: 999;
+    transition: .3s linear;
 }
 
 .inner-width {
@@ -65,18 +66,28 @@
     transition: .2s linear;
 }
 
+/* !important : CSS는 같은 속성을 여러 번 정의했을 때, 나중에 설정한 값이 적용됩니다.
+            만약 나중에 설정한 값이 적용되지 않게 하려면 속성값 뒤에 !important를 붙입니다. */
 .navbar-menu a:hover {
-    color: #48dbfb;
+    color: #48dbfb !important;
 }
-/*
+
 .sticky {
-  background-color: #fff;
-  padding: 18px 0;
+    background-color: #fff;
+    padding: 18px 0;
 }
 .sticky .logo {
-  background-image: url("/images/black-logo.png");
+    background-image: url("/images/black-logo.png");
 }
-*/
+
+.sticky .navbar-menu a{
+    color: #111;
+}
+
+.sticky .menu-toggler span{
+    background-color: #111;
+}
+
 #home{
     height: 100vh;
     min-height: 500px;
@@ -153,4 +164,50 @@
 #home .buttons a:nth-child(2){
     background-color: #48dbfb;
     color: #fff;
+}
+
+/* On screens that are 980px or less */
+@media screen and (max-width: 980px){
+    .menu-toggler{
+        display: block;
+    }
+
+    .navbar-menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: #353b48;
+        top: 0;
+        right: -100%;
+        max-width: 400px;
+        padding: 80px 50px;
+        transition: .3s linear;
+    }
+
+    .navbar-menu a{
+        display: block;
+        font-size: 30px;
+        margin: 30px 0;
+    }
+
+    .sticky .navbar-menu{
+        background-color: #f1f1f1;
+    }
+
+    .navbar-menu.active{
+        right: 0;
+    }
+    /* nth-child(1) : 첫번째 요소 선택 */
+    .menu-toggler.active span:nth-child(1){
+        transform: rotate(-45deg);
+        top: 4px;
+    }
+    /* opacity: 투명도 지정 1~0 */
+    .menu-toggler.active span:nth-child(2){
+        opacity: 0;
+    }
+    .menu-toggler.active span:nth-child(3){
+        transform: rotate(45deg);
+        bottom:14px;
+    }
 }
