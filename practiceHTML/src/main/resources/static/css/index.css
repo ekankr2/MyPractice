@@ -8,14 +8,13 @@
     box-sizing: border-box;
 }
 
-.navbar{
+.navbar {
     position: fixed;
-    background-color: red;
+    background-color: transparent;
     width: 100%;
     padding: 30px 0;
     top: 0;
     z-index: 999;
-    transition: .3s linear;
 }
 
 .inner-width {
@@ -24,8 +23,134 @@
     padding: 0 40px;
 }
 
-.navbar .inner-width {
+.navbar .inner-width{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.logo {
+    width: 44px;
+    height: 32px;
+    background-image: url("/images/white-logo.png");
+    background-size: contain;
+}
+/* z-index : 숫자가 높을수록 숫자가 낮은 값을 덮는다
+   position을 지정하지 않으면 적용되지 않는다. */
+.menu-toggler{
+    background: none;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    z-index: 999;
+    display: none;
+}
+
+.menu-toggler span{
+    display: block;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    position: relative;
+    transition: .3s linear;
+}
+
+.navbar-menu a{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: .2s linear;
+}
+
+.navbar-menu a:hover {
+    color: #48dbfb;
+}
+/*
+.sticky {
+  background-color: #fff;
+  padding: 18px 0;
+}
+.sticky .logo {
+  background-image: url("/images/black-logo.png");
+}
+*/
+#home{
+    height: 100vh;
+    min-height: 500px;
+    background: url("/images/bg.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#home .inner-width{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+#home .content{
+    width: 100%;
+    color: #fff;
+}
+
+#home .content h1{
+    font-size: 60px;
+    margin-bottom: 60px;
+}
+/* :: - 선택한 요소 맨 마지막에 자식의 의사 요소를 생성
+      보통 content 속성과 함께 짝지어 사용        */
+#home .content h1::after{
+    content: "EKAN";
+    animation: textanim 10s linear infinite;
+}
+
+@keyframes textanim {
+    25%{
+        content: "A Developer";
+    }
+    50%{
+        content: "A Designer";
+    }
+    75%{
+        content: "A Youtuber";
+    }
+}
+
+.sm a{
+    color: #fff;
+    font-size: 22px;
+    margin: 0 10px;
+    transition: .2s linear;
+}
+
+.sm a:hover{
+    color: #48dbfb;
+}
+
+#home .buttons{
+    margin-top: 60px;
+}
+
+#home .buttons a{
+    display: inline-block;
+    margin: 15px;
+    color: #48dbfb;
+    font-size: 15px;
+    font-weight: 500;
+    width: 180px;
+    border: 1px solid #48dbfb;
+    padding: 14px 0;
+    border-radius: 6px;
+    transition: .2s linear;
+}
+/* a:nth-child(2) : 목록의 두번째 <a> 선택 */
+#home .buttons a:hover,
+#home .buttons a:nth-child(2){
+    background-color: #48dbfb;
+    color: #fff;
 }
