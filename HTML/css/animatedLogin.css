@@ -9,7 +9,7 @@
 
 body{
     min-height: 100vh;
-    background-image: linear-gradient(120deg,#3498db,#8e44ad);
+    background-image: linear-gradient(120deg, #3498db, #8e44ad);
 }
 
 .login-form{
@@ -61,7 +61,7 @@ body{
     position: absolute;
     width: 0%;
     height: 2px;
-    background: linear-gradient(120deg,#3498db,#8e44ad);
+    background: linear-gradient(120deg, #3498db, #8e44ad);
     transition: .5s;
 }
 
