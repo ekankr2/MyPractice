@@ -346,4 +346,23 @@ section{
   .inner-width{
     max-width: 800px;
   }
+
+  .about-pic{
+    margin: 0 auto 60px;
+  }
+
+  .about-text{
+    flex: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .inner-width{
+    padding: 0 20px;
+  }
+
+  .skill{
+    width: 100%;
+  }
 }
