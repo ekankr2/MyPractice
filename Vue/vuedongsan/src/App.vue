@@ -1,10 +1,32 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div>
+    <h4>{{  products[0] }}</h4>
+    <p>50 만원</p>
   </div>
-  <router-view/>
+  <div>
+    <h4>{{ products[1] }}</h4>
+    <p>70 만원</p>
+  </div>
+  <div>
+    <h4>{{ products[2] }}</h4>
+    <p>80 만원</p>
+  </div>
 </template>
+
+<script>
+
+export default {
+  name: 'App',
+  data(){
+    return {
+      products : ['역삼동원룸', '천호동원룸', '마포구원룸'],
+    }
+  },
+  components: {
+
+  }
+}
+</script>
 
 <style>
 #app {
