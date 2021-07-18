@@ -1,15 +1,44 @@
 <template>
-  <hello-world />
+  <div class="home">
+    <div id="header">
+    <router-link :to="{ name: 'Home'}"
+                 class="nav-link"
+                 active-class="active">
+      Home
+    </router-link>
+      <router-link :to="{ name: 'Todo'}"
+                   class="nav-link"
+                   active-class="active">
+        Todo
+      </router-link>
+  </div>
+  </div>
 </template>
 
 <script>
-  import HelloWorld from '../components/HelloWorld'
 
   export default {
     name: 'Home',
 
     components: {
-      HelloWorld,
     },
   }
 </script>
+
+<style scoped>
+
+body{
+  text-align: center;
+}
+.home{
+  margin: 20px;
+}
+.nav-link {
+  margin: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: fuchsia;
+  font-size: 2rem;
+}
+
+</style>
