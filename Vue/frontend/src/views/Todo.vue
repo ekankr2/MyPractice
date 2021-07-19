@@ -14,6 +14,7 @@
 <script>
 import TodoHeader from "../components/TodoHeader";
 import TodoInput from "../components/TodoInput";
+import {mapActions} from "vuex";
 export default {
   name: "Todo",
   components: {TodoInput, TodoHeader},
