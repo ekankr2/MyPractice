@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Todo from "../views/Todo";
+import EventBusTestPage from "../views/EventBusTestPage";
 
 Vue.use(VueRouter)
 
@@ -19,7 +20,14 @@ const routes = [
     path: '/todo',
     name: 'Todo',
     component: Todo
-  }
+  },
+  {
+    path: '/eventBusTest',
+    name: 'EventBusTestPage',
+    components: {
+      default: EventBusTestPage
+    }
+  },
 ]
 
 const router = new VueRouter({

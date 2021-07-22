@@ -11,6 +11,11 @@
                    active-class="active">
         Todo
       </router-link>
+      <router-link :to="{ name: 'EventBusTestPage'}"
+                   class="nav-link"
+                   active-class="active">
+        EventBusTest
+      </router-link>
   </div>
   </div>
 </template>
