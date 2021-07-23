@@ -1,1 +1,2 @@
 export const ADD_TODO = 'ADD_TODO'
+export const FETCH_STUDENT_LIST = 'FETCH_STUDENT_LIST'

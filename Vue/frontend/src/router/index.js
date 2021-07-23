@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Todo from "../views/Todo";
 import EventBusTestPage from "../views/EventBusTestPage";
+import StudentListPage from "../views/StudentListPage";
 
 Vue.use(VueRouter)
 
@@ -26,6 +27,13 @@ const routes = [
     name: 'EventBusTestPage',
     components: {
       default: EventBusTestPage
+    }
+  },
+  {
+    path: '/student',
+    name: 'StudentListPage',
+    components: {
+      default: StudentListPage
     }
   },
 ]
