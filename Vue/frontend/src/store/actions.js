@@ -1,6 +1,8 @@
 import {
     ADD_TODO,
     FETCH_STUDENT_LIST,
+    FETCH_PRODUCT,
+    FETCH_PRODUCT_LIST,
 
 } from './mutation-types'
 
@@ -23,6 +25,19 @@ export default {
         return axios.get(`http://localhost:7777/vuestudent/grades`)
             .then((res) => {
                 commit(FETCH_STUDENT_LIST, res.data)
+            })
+    },
+    // Product
+    fetchProductList ({ commit }) {
+        return axios.get(`http://localhost:7777/vueproduct/lists`)
+            .then((res) => {
+                commit(FETCH_PRODUCT_LIST, res.data)
+            })
+    },
+    fetchProduct ({ commit }, productNo) {
+        return axios.get(`http://localhost:7777/vueproduct/${productNo}`)
+            .then((res) => {
+                commit(FETCH_PRODUCT, res.data)
             })
     },
 }

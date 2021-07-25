@@ -4,4 +4,7 @@ export default {
     nextTodoId: 1,
     // 학생
     students: [],
+    // product
+    products: [],
+    product: null,
 }
