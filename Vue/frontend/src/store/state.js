@@ -7,4 +7,7 @@ export default {
     // product
     products: [],
     product: null,
+    // 랜덤 넘버
+    randomFromSpring: 0,
+
 }

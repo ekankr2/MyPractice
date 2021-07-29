@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Todo from "../views/Todo";
 import EventBusTestPage from "../views/EventBusTestPage";
 import StudentListPage from "../views/StudentListPage";
+import RandomNumberTest from "../views/RandomNumberTest";
 
 Vue.use(VueRouter)
 
@@ -36,6 +37,14 @@ const routes = [
       default: StudentListPage
     }
   },
+  {
+    path: '/randomNum',
+    name: 'RandomNumberTest',
+    components: {
+      default: RandomNumberTest
+    }
+  },
+
 ]
 
 const router = new VueRouter({

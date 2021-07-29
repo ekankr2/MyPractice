@@ -2,7 +2,10 @@ import {
     ADD_TODO,
     FETCH_STUDENT_LIST,
     FETCH_PRODUCT,
-    FETCH_PRODUCT_LIST
+    FETCH_PRODUCT_LIST,
+
+    SUCCESS_GEN_RAND_NUM,
+    FAIL_GEN_RAND_NUM,
 } from "./mutation-types";
 
 export default {
@@ -20,5 +23,13 @@ export default {
     },
     [FETCH_PRODUCT] (state, product) {
         state.product = product
+    },
+    // 스프링 랜덤 데이터 통신
+    [SUCCESS_GEN_RAND_NUM] (state, payload) {
+        console.log('payload = ' + payload)
+        state.randomFromSpring = payload
+    },
+    [FAIL_GEN_RAND_NUM] () {
+        console.log('통신 에러!')
     },
 }
