@@ -5,6 +5,7 @@ import Todo from "../views/Todo";
 import EventBusTestPage from "../views/EventBusTestPage";
 import StudentListPage from "../views/StudentListPage";
 import RandomNumberTest from "../views/RandomNumberTest";
+import MaterializeTestPage from "../views/MaterializeTestPage";
 
 Vue.use(VueRouter)
 
@@ -42,6 +43,13 @@ const routes = [
     name: 'RandomNumberTest',
     components: {
       default: RandomNumberTest
+    }
+  },
+  {
+    path: '/materialize',
+    name: 'MaterializeTestPage',
+    components: {
+      default: MaterializeTestPage
     }
   },
 
