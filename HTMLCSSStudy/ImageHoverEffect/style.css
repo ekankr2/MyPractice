@@ -14,12 +14,14 @@ body{
     min-height: 100vh;
     background: #111;
 }
+
 .container{
     position: relative;
     width: 800px;
     height: 500px;
     background: #222;
 }
+
 .container .clip{
     position: absolute;
     top: 0;
@@ -28,11 +30,13 @@ body{
     height: 100%;
     transition: 0.5s;
 }
+
 .container .clip.clip1{
     background: url("image/img1.jpg");
     background-size: cover;
     clip-path: polygon(0 0, 55% 0, 20% 100%, 0% 100%);
 }
+
 .container .clip.clip2{
     background: url("image/img2.jpg");
     background-size: cover;
@@ -43,12 +47,16 @@ body{
     background-size: cover;
     clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%);
 }
+
 .container:hover .clip{
     clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
 }
+
 .container .clip:hover{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
 }
+
 .container .clip .content{
     position: absolute;
     bottom: -100%;
