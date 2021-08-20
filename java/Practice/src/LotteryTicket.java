@@ -1,5 +1,6 @@
 public class LotteryTicket {
     public static void main(String[] args) {
+        for(int l= 0; l<5; l++){
         int lotto[] = new int[45];
 
         for (int i = 0; i < lotto.length; i++)//배열에 0~44를 저장
@@ -15,8 +16,10 @@ public class LotteryTicket {
             lotto[0]=lotto[j];
             lotto[j]=temp;
         }//배열 6개 출력하기
-        for(int i = 0; i<6; i++){
-            System.out.printf("%5d",lotto[i]);//5칸을 확보한다.
+        for(int i = 0; i<6; i++) {
+            System.out.printf("%5d", lotto[i]);//5칸을 확보한다.
+        }
+            System.out.println();
         }
     }
 }
