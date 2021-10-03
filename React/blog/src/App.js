@@ -40,12 +40,13 @@ function App() {
             <hr/>
         </div>
 
+        <button onClick={ ()=>{modal변경(!modal)} }>버튼</button>
+
         {
             modal === true
-                ? <Modal></Modal>
+            ? <Modal></Modal>
                 : null
         }
-
 
     </div>
   );
