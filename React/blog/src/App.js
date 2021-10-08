@@ -3,30 +3,7 @@ import React, { useState } from "react";
 import './App.css';
 
 function App() {
-    let name = "개발자 블로그"
-    let [title, changeTitle] = useState(['노량진 수산시장', '겨울 제철 생선', '회 뜨는 법'])
-    let [따봉, 따봉변경] = useState(0)
 
-    return (
-        <div className="App">
-            <div className="black-nav">
-                <div>{name}</div>
-            </div>
-
-            {
-                title.map(function (a, i){
-                    return(
-                        <div className="list">
-                            <h3>{ a }</h3>
-                            <p>2월 17일 발행</p>
-                            <hr/>
-                        </div>
-                    )
-                })
-            }
-        </div>
-    )
-/*
     let [글제목, 글제목변경] = useState(['남자 코트 추천', '강남 우동 맛집', '재미있는 이야기']);
     let [따봉, 따봉변경] = useState([0,0,0]);
     let[modal, modal변경] = useState(false);
@@ -81,8 +58,6 @@ function Modal(props) {
             <p>상세내용</p>
         </div>
     )
-
- */
 
 
 }
