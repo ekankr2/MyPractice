@@ -19,6 +19,13 @@ function App() {
         글제목변경(newArray)
     }
 
+    function 제목추가() {
+        var newArray = [...글제목]
+        newArray[newArray.length] = '여자 코트 추천'
+        글제목변경(newArray)
+        console.log(글제목)
+    }
+
   return (
     <div className="App">
       <div className="black-nav">
@@ -38,9 +45,11 @@ function App() {
             })
         }
 
-        { 입력값 }
-        <input onChange={ (e)=>{ 입력값변경(e.target.value) } }/>
 
+        <div className="publish">
+            <input onChange={(e)=>{입력값변경(e.target.value)}}/>
+            <button onClick={ 제목추가 }>저장</button>
+        </div>
 
         <button onClick={ ()=>{modal변경(!modal)} }>버튼</button>
 
