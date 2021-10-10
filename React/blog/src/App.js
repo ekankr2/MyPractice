@@ -21,7 +21,8 @@ function App() {
 
     function 제목추가() {
         var newArray = [...글제목]
-        newArray[newArray.length] = '여자 코트 추천'
+
+        newArray[newArray.length] = 입력값
         글제목변경(newArray)
         console.log(글제목)
     }
@@ -48,6 +49,7 @@ function App() {
 
         <div className="publish">
             <input onChange={(e)=>{입력값변경(e.target.value)}}/>
+            {입력값}
             <button onClick={ 제목추가 }>저장</button>
         </div>
 
