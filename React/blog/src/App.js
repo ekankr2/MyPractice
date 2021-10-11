@@ -56,6 +56,8 @@ function App() {
                 : null
         }
 
+        <Profile></Profile>
+
     </div>
   );
 }
@@ -68,8 +70,17 @@ function Modal(props) {
             <p>상세내용</p>
         </div>
     )
+}
 
-
+class Profile extends React.Component {
+    constructor(){
+        super();
+    }
+    render(){
+        return (
+            <div>프로필입니다.</div>
+        )
+    }
 }
 
 export default App;
