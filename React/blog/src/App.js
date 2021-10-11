@@ -75,10 +75,19 @@ function Modal(props) {
 class Profile extends React.Component {
     constructor(){
         super();
+        this.state = { name : 'Kim' }
+    }
+
+    changeName(){
+        this.setState({name:'Park'})
     }
     render(){
         return (
-            <div>프로필입니다.</div>
+            <div>
+            <h3>프로필입니다.</h3>
+            <p>저는 { this.state.name } 입니다.</p>
+                <button onClick={ this.changeName.bind(this)}>버튼</button>
+            </div>
         )
     }
 }
