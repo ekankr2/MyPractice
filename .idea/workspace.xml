@@ -23,6 +23,19 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/java/Practice" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -33,6 +46,7 @@
       <updated>1621234983494</updated>
       <workItem from="1625164598270" duration="71000" />
       <workItem from="1633170185851" duration="86000" />
+      <workItem from="1634958374893" duration="79000" />
     </task>
     <servers />
   </component>
