@@ -1,4 +1,4 @@
-let 이름 = 'kim';
+let 이름김 = 'kim';
 let 나이 :number = 50
 let 결혼했니 :boolean = true;
 
