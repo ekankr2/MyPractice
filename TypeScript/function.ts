@@ -42,7 +42,7 @@ function Length(x :number | string) :number{
 }
 
 function Marry(income :number, house :boolean, charm :string) :void|string{
-    let point :number;
+    let point :number = 0;
     point += income
 
     if(house){

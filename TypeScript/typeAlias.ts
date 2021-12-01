@@ -23,7 +23,7 @@ const 여친 :Girlfriend = {
 
 type Name = string;
 type Age = number;
-type Person = Name | Age
+type Person1 = Name | Age
 
 type positionX = { x : number }
 // type positionX = number; // 재정의 불가능
