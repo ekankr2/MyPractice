@@ -17,13 +17,13 @@ let 오브젝 = { student : true, age : 20}
 //     console.log(a, b)
 // }
 
-function 함수1({student, age} :{student:boolean, age:number}){
+function 함수10({student, age} :{student:boolean, age:number}){
     console.log(student, age)
 }
 
 // 함수(1,2)
 // 함수1({ student : true, age : 20})
-함수1(오브젝)
+함수10(오브젝)
 
 function 최대값(...num:number[]){
     num.forEach((a)=>{
