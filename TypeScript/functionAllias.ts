@@ -25,10 +25,10 @@ let 회원정보 :Member = {
 회원정보.plusOne(1)
 회원정보.changeName()
 
-function 함수1(a){
+function 함수11(a){
     a()
 }
 function 함수4(){
 
 }
-함수1(함수4)
+함수11(함수4)

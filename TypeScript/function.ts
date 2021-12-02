@@ -1,9 +1,9 @@
 
-function 함수(x :number) :number {
+function 함수12(x :number) :number {
     return x * 2
 }
 
-함수(6)
+함수12(6)
 // 함수('6')
 // 함수() parameter 없으면 에러남
 
@@ -24,7 +24,7 @@ function 함수3(x :number | string) { // typenarrowing 필요
         return x + 1
     }
 }
-함수(2)
+함수12(2)
 
 function Hello(name? :string) :void{
     if(name){
