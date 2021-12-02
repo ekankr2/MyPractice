@@ -7,7 +7,7 @@ interface Square {
 let 네모 :Square= { color : 'red', width : 100}
 
 type Animal1 = { name : string }
-type Cat = { age : number } & Animal1
+type Cat = { name : number } & Animal1
 
 interface Student {
     name : string
