@@ -1,18 +1,18 @@
 
-function 함수12(x :number) :number {
+function 함수1234(x :number) :number {
     return x * 2
 }
 
-함수12(6)
+함수1234(6)
 // 함수('6')
 // 함수() parameter 없으면 에러남
 
 
-function 함수2(x? :number) :void { //return 하는것 막아줌
+function 함수20(x? :number) :void { //return 하는것 막아줌
     // return 1 + 1
 }
 
-함수2() // 물음표 > 들어올 수도 있다. ( | undefined 와 같음)
+함수20() // 물음표 > 들어올 수도 있다. ( | undefined 와 같음)
 
 function 함수3(x :number | string) { // typenarrowing 필요
     // if (x의 타입이 숫자면){
@@ -24,7 +24,7 @@ function 함수3(x :number | string) { // typenarrowing 필요
         return x + 1
     }
 }
-함수12(2)
+함수1234(2)
 
 function Hello(name? :string) :void{
     if(name){

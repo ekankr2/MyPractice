@@ -1,8 +1,8 @@
 
-type Animal = string | number | undefined;
+type Animals = string | number | undefined;
 
 // let 동물 :string | number | undefined;
-let 동물 :Animal = 123;
+let 동물 :Animals = 123;
 
 type Animal2 = { name : string, age : number }
 // let 동물2 :{ name : string, age : number } = { name : 'kim', age : 20}

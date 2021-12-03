@@ -1,7 +1,7 @@
 type Fish = {swim :string}
 type Bird = {fly :string}
 
-function 함수(animal : Fish| Bird){
+function 함수123(animal : Fish| Bird){
     if( 'swim' in animal){
         animal.swim
     }

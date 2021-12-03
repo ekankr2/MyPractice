@@ -1,7 +1,7 @@
-function 함수123(...a :number[]){
+function 함수1235(...a :number[]){
     console.log(a)
 }
-함수123(1,5,3,5,6,6)
+함수1235(1,5,3,5,6,6)
 
 let arr = [1,2,3]
 let arr2 = [4,5]
