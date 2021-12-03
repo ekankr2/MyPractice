@@ -1,4 +1,4 @@
-class User{
+class Users{
     name :string;
     private familyName :string = 'kim'
     constructor(a) {
@@ -9,7 +9,7 @@ class User{
     }
 }
 
-let 유저1 = new User('민수')
+let 유저1 = new Users('민수')
 유저1.이름변경함수()
 
 class Person {

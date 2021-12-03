@@ -1,5 +1,5 @@
 
-class Person{
+class Persons{
 
     name :string;
 
@@ -11,8 +11,8 @@ class Person{
     }
 }
 
-let 사람1 = new Person('kim')
-let 사람2 = new Person('park')
+let 사람1 = new Persons('kim')
+let 사람2 = new Persons('park')
 사람1.함수('안녕')
 console.log(사람1)
 

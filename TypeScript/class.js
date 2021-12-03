@@ -1,14 +1,14 @@
-var Person = /** @class */ (function () {
-    function Person(a) {
+var Persons = /** @class */ (function () {
+    function Persons(a) {
         this.name = a;
     }
-    Person.prototype.함수 = function (a) {
+    Persons.prototype.함수 = function (a) {
         console.log('안녕' + a);
     };
-    return Person;
+    return Persons;
 }());
-var 사람1 = new Person('kim');
-var 사람2 = new Person('park');
+var 사람1 = new Persons('kim');
+var 사람2 = new Persons('park');
 사람1.함수('안녕');
 console.log(사람1);
 var Car = /** @class */ (function () {
