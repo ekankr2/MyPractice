@@ -1,8 +1,9 @@
-interface StringOnly {
+interface Type {
     [key :string] : string | number
 }
 
-let user :StringOnly= {
+
+let user :Type= {
     0 :'kim',
     1 : '20',
     2 : 'seoul'
