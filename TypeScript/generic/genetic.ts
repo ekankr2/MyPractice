@@ -44,3 +44,5 @@ class Personss <T> {
 }
 let ab = new Personss<string>('어쩌구');
 ab.name //string 타입이 되었넹
+
+export {}
