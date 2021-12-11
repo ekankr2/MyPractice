@@ -1,5 +1,23 @@
+
 div, input, textarea{
     box-sizing: border-box;
+}
+.nav-container{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    padding: 10px;
+    background-color: #f65b75;
+}
+.nav-item{
+    margin-right: 10px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+.logo{
+    font-weight: bold;
+    font-size: 1.7em;
 }
 body{
     margin: 0;
