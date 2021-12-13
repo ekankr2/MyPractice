@@ -1,29 +1,33 @@
 
-div, input, textarea{
+div, input, textarea {
     box-sizing: border-box;
 }
-.nav-container{
+
+.nav-container {
     display: flex;
     height: 40px;
     align-items: center;
     padding: 10px;
     background-color: #f65b75;
 }
-.nav-item{
+
+.nav-item {
     margin-right: 10px;
     color: white;
     font-size: 18px;
     cursor: pointer;
 }
-.logo{
+
+.logo {
     font-weight: bold;
     font-size: 1.7em;
 }
-body{
+
+body {
     margin: 0;
 }
 
-.main-background{
+.main-background {
     width: 100%;
     height: 500px;
     background-image: url("../img/shoes.jpg");
@@ -34,16 +38,19 @@ body{
     text-align: center;
     position: relative;
 }
-.main-title{
+
+.main-title {
     color: white;
     font-size: 40px;
     margin-top: 100px;
 }
-.main-content{
+
+.main-content {
     color: white;
     font-size: 20px;
 }
-.main-button{
+
+.main-button {
     padding: 15px;
     font-size: 20px;
     background: white;
@@ -55,7 +62,8 @@ body{
     margin: auto;
     width: 150px;
 }
-.main-box{
+
+.main-box {
     background-color: #e5e4e4;
     width: 80%;
     max-width: 600px;
@@ -65,35 +73,53 @@ body{
     position: relative;
     top: -40px;
 }
-.form-background{
+
+.form-background {
     background-color: black;
     padding: 30px;
 }
-.form-white{
+
+.form-white {
     background-color: white;
     padding: 30px;
     width: 80%;
     max-width: 600px;
     margin: auto;
 }
-.form-input{
+
+.form-input {
     width: 100%;
     padding: 10px;
     font-size: 20px;
     border: 1px solid black;
     border-radius: 5px;
 }
-.w-100{
+
+.w-100 {
     width: 100%;
     padding: 10px;
 }
-.w-50{
+
+.w-50 {
     width: 50%;
     float: left;
     padding: 10px;
 }
-.yellow-button{
+
+.yellow-button {
     padding: 10px;
     display: block;
     margin-left: auto;
+}
+
+@media screen and (max-width: 1200px){
+    .main-title{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .main-title{
+        font-size: 20px;
+    }
 }
