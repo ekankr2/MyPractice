@@ -10,12 +10,12 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: min(1100px, 100%);
+    width: min(800px, 100%);
     margin: auto;
 }
 .menu{
     position: relative;
-    width: 260px;
+    width: 300px;
     height: 100px;
     background: greenyellow;
     margin: 25px auto;
