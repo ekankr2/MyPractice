@@ -1,7 +1,9 @@
 .grid-container2{
     display: grid;
-    grid-template-columns: 100px 100px 100px;
-    grid-template-rows: 100px 100px;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
     "헤더 헤더 . "
     "헤더 헤더 . "
@@ -10,9 +12,23 @@
 
 .grid-container2 img{
     width: 100%;
+    display: block;
 }
 
 .first-pic{
     grid-area: 헤더;
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container2{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "헤더"
+        "."
+        "."
+        "."
+        "."
+        "."
+    }
 }
 
