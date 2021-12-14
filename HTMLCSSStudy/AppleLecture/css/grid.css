@@ -1,0 +1,18 @@
+.grid-container2{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px;
+    grid-template-areas:
+    "헤더 헤더 . "
+    "헤더 헤더 . "
+    ". . ."
+}
+
+.grid-container2 img{
+    width: 100%;
+}
+
+.first-pic{
+    grid-area: 헤더;
+}
+
