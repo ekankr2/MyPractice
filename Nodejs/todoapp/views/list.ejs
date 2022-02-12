@@ -53,13 +53,21 @@
     $('.delete').click(function (e){
         // data-id
         var 글번호 = e.target.dataset.id
+        var 지금누른거 = $(this)
 
         $.ajax({
             method: 'DELETE',
             url: '/delete',
             data: {_id: 글번호}
         }).done(function (결과){
+            // 페이지를 강제로 새로고침
+            // 삭제한 게시물 안보이게
+            console.log('성공했어염')
+            // 사라짐
+            지금누른거.parent('li').fadeOut()
 
+        }).fail(function (xhr, textStatus, errorThrown){
+            console.log(xhr, textStatus, errorThrown)
         })
     })
 </script>
