@@ -61,3 +61,7 @@ app.get('/list', function (요청, 응답) {
     });
 
 })
+
+app.delete('/delete', function (요청, 응답){
+    console.log(요청.body)
+})
