@@ -5,6 +5,8 @@ app.use(bodyParser.urlencoded({extended: true}))
 const MongoClient = require('mongodb').MongoClient
 app.set('view engine', 'ejs')
 
+app.use('/public', express.static('public'))
+
 var db;
 
 app.listen(8080, function () {
