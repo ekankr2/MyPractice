@@ -196,4 +196,7 @@ app.delete('/delete', function (요청, 응답) {
     })
 })
 
-app.use('/', require('./routes/shop'));
+app.use('/shop', require('./routes/shop'));
+app.use('/board/sub', require('./routes/board'));
+
+
