@@ -195,3 +195,5 @@ app.delete('/delete', function (요청, 응답) {
         응답.status(200).send({message: '성공했습니다'})
     })
 })
+
+app.use('/', require('./routes/shop'));
