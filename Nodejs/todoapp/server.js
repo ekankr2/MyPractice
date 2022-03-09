@@ -58,10 +58,23 @@ app.post('/add', function (요청, 응답) {
     })
 })
 
-app.get('/search', (요청, 응답) => {
-    console.log(요청.query.value)
-    db.collection('post').find({제목: 요청.query.value}).toArray((에러, 결과) => {
+app.get('/search', (요청, 응답)=>{
+    var 검색조건 = [
+        {
+            $search: {
+                index: 'titleSearch',
+                text: {
+                    query: 요청.query.value,
+                    path: '제목'  // 제목날짜 둘다 찾고 싶으면 ['제목', '날짜']
+                }
+            }
+        },
+        { $sort : {_id : 1}},
+        { $limit : 10 }
+    ]
+    db.collection('post').aggregate(검색조건).toArray((에러, 결과)=>{
         console.log(결과)
+        응답.render('search.ejs', {posts : 결과})
     })
 })
 
