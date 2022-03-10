@@ -38,7 +38,7 @@ app.get('/write', function (요청, 응답) {
     응답.render('write.ejs')
 })
 
-app.get('/search', (요청, 응답)=>{
+app.get('/search', (요청, 응답) => {
     var 검색조건 = [
         {
             $search: {
@@ -49,12 +49,12 @@ app.get('/search', (요청, 응답)=>{
                 }
             }
         },
-        { $sort : {_id : 1}},
-        { $limit : 10 }
+        {$sort: {_id: 1}},
+        {$limit: 10}
     ]
-    db.collection('post').aggregate(검색조건).toArray((에러, 결과)=>{
+    db.collection('post').aggregate(검색조건).toArray((에러, 결과) => {
         console.log(결과)
-        응답.render('search.ejs', {posts : 결과})
+        응답.render('search.ejs', {posts: 결과})
     })
 })
 
@@ -75,16 +75,19 @@ app.get('/detail/:id', function (요청, 응답) {
     })
 })
 
-app.get('/edit/:id', function (요청, 응답){
+app.get('/edit/:id', function (요청, 응답) {
 
-    db.collection('post').findOne({_id : parseInt(요청.params.id)}, function (에러, 결과){
-        응답.render('edit.ejs', {post : 결과})
+    db.collection('post').findOne({_id: parseInt(요청.params.id)}, function (에러, 결과) {
+        응답.render('edit.ejs', {post: 결과})
     })
 })
 
-app.put('/edit', function (요청,응답){
-    db.collection('post').updateOne({ _id : parseInt(요청.body.id) },{ $set : {
-        제목: 요청.body.title, 날짜: 요청.body.date } }, function (에러, 결과){
+app.put('/edit', function (요청, 응답) {
+    db.collection('post').updateOne({_id: parseInt(요청.body.id)}, {
+        $set: {
+            제목: 요청.body.title, 날짜: 요청.body.date
+        }
+    }, function (에러, 결과) {
         console.log('수정완료')
         응답.redirect('/list')
     })
@@ -94,28 +97,29 @@ const passport = require('passport')
 const LocalStrategy = require('passport-local').Strategy
 const session = require('express-session')
 // 미들웨어
-app.use(session({secret: '비밀코드', resave : true, saveUninitialized: false}))
+app.use(session({secret: '비밀코드', resave: true, saveUninitialized: false}))
 app.use(passport.initialize())
 app.use(passport.session())
 
 
-app.get('/login', function (요청, 응답){
+app.get('/login', function (요청, 응답) {
     응답.render('login.ejs')
 })
 
 app.post('/login', passport.authenticate('local', {
     failureRedirect: '/fail'
-}), function (요청, 응답){
+}), function (요청, 응답) {
     응답.redirect('/')
 })
 
-app.get('/mypage', 로그인했니, function (요청, 응답){
+app.get('/mypage', 로그인했니, function (요청, 응답) {
     console.log(요청.user)
-    응답.render('mypage.ejs', {사용자 : 요청.user})
+    응답.render('mypage.ejs', {사용자: 요청.user})
 })
+
 // middleware
-function 로그인했니(요청, 응답, next){
-    if(요청.user){
+function 로그인했니(요청, 응답, next) {
+    if (요청.user) {
         next()
     } else {
         응답.send('로그인안하셨는데요?')
@@ -129,31 +133,31 @@ passport.use(new LocalStrategy({
     passReqToCallback: false,
 }, function (입력한아이디, 입력한비번, done) {
     //console.log(입력한아이디, 입력한비번);
-    db.collection('login').findOne({ id: 입력한아이디 }, function (에러, 결과) {
+    db.collection('login').findOne({id: 입력한아이디}, function (에러, 결과) {
         if (에러) return done(에러)
 
-        if (!결과) return done(null, false, { message: '존재하지않는 아이디요' })
+        if (!결과) return done(null, false, {message: '존재하지않는 아이디요'})
         if (입력한비번 == 결과.pw) {
             return done(null, 결과)
         } else {
-            return done(null, false, { message: '비번틀렸어요' })
+            return done(null, false, {message: '비번틀렸어요'})
         }
     })
 }));
 
-passport.serializeUser(function (user, done){
+passport.serializeUser(function (user, done) {
     done(null, user.id)
 })
 
-passport.deserializeUser(function (아이디, done){
-    db.collection('login').findOne({id: 아이디}, function (에러, 결과){
+passport.deserializeUser(function (아이디, done) {
+    db.collection('login').findOne({id: 아이디}, function (에러, 결과) {
         done(null, 결과)
     })
 
 })
 
-app.post('/register', function (요청,응답){
-    db.collection('login').insertOne( {id: 요청.body.id, pw: 요청.body.pw}, function (에러, 결과){
+app.post('/register', function (요청, 응답) {
+    db.collection('login').insertOne({id: 요청.body.id, pw: 요청.body.pw}, function (에러, 결과) {
         응답.redirect('/')
     })
 })
@@ -166,7 +170,7 @@ app.post('/add', function (요청, 응답) {
         console.log(결과.totalPost)
         var 총게시물갯수 = 결과.totalPost
 
-        var 저장할거 = {_id: 총게시물갯수 + 1,작성자 : 요청.user._id, 제목: 요청.body.title, 날짜: 요청.body.date}
+        var 저장할거 = {_id: 총게시물갯수 + 1, 작성자: 요청.user._id, 제목: 요청.body.title, 날짜: 요청.body.date}
 
         db.collection('post').insertOne(저장할거,
             function (에러, 결과) {
@@ -186,12 +190,13 @@ app.delete('/delete', function (요청, 응답) {
     console.log(요청.body)
     요청.body._id = parseInt(요청.body._id)
 
-    var 삭제할데이터 = { _id : 요청.body._id, 작성자 : 요청.user._id }
+    var 삭제할데이터 = {_id: 요청.body._id, 작성자: 요청.user._id}
 
     db.collection('post').deleteOne(삭제할데이터, function (에러, 결과) {
         console.log('삭제완료')
         if (결과) {
-            console.log(결과)}
+            console.log(결과)
+        }
         응답.status(200).send({message: '성공했습니다'})
     })
 })
@@ -199,4 +204,35 @@ app.delete('/delete', function (요청, 응답) {
 app.use('/shop', require('./routes/shop'));
 app.use('/board/sub', require('./routes/board'));
 
+// image
+let multer = require('multer');
+var storage = multer.diskStorage({
 
+    destination: function (req, file, cb) {
+        cb(null, './public/image')
+    },
+    filename: function (req, file, cb) {
+        cb(null, file.originalname + '날짜' + new Date())
+    },
+    fileFilter: function (req, file, callback) {
+        var ext = path.extname(file.originalname);
+        if(ext !== '.png' && ext !== '.jpg' && ext !== '.jpeg') {
+            return callback(new Error('PNG, JPG만 업로드하세요'))
+        }
+        callback(null, true)
+    },
+});
+
+var upload = multer({storage: storage})
+
+app.get('/upload', function (요청, 응답) {
+    응답.render('upload.ejs')
+})
+
+app.post('/upload', upload.single('프로필'), function (요청, 응답) {
+    응답.send('업로드완료')
+})
+
+app.get('/image/:imageName', function (요청, 응답){
+    응답.sendFile(__dirname + '/public/image/' + 요청.params.imageName)
+})
