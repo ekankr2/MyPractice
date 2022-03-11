@@ -230,7 +230,7 @@ app.get('/upload', function (요청, 응답) {
 })
 
 app.post('/upload', upload.single('프로필'), function (요청, 응답) {
-    응답.send('업로드완료')
+    응답.send('업로드완료') 
 })
 
 app.get('/image/:imageName', function (요청, 응답){
