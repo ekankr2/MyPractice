@@ -50,6 +50,21 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 
 <script>
+
+    var 지금누른채팅방id;
+    var eventSource;   //일단변수
+
+    $('.list-group-item').click(function(){
+        지금누른채팅방id = this.dataset.id;
+
+        //프론트엔드에서 실시간 소통채널 여는법
+        eventSource = new EventSource('/message/' + 지금누른채팅방id);
+        eventSource.addEventListener('test', function (e){
+            console.log(JSON.parse(e.data));
+        });
+
+    });
+
     $('#send').click(function(){
         var 채팅내용 = $('#chat-input').val();   //1, 2
         var 보낼거 = {
@@ -66,12 +81,7 @@
 
 
     //4
-    var 지금누른채팅방id;
 
-    $('.list-group-item').click(function (){
-        $(this).css('background-color', '#eee');
-        지금누른채팅방id = $(this).attr('data-id');
-    });
 
 </script>
 
