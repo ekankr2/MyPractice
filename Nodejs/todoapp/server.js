@@ -217,7 +217,7 @@ var storage = multer.diskStorage({
     },
     fileFilter: function (req, file, callback) {
         var ext = path.extname(file.originalname);
-        if(ext !== '.png' && ext !== '.jpg' && ext !== '.jpeg') {
+        if (ext !== '.png' && ext !== '.jpg' && ext !== '.jpeg') {
             return callback(new Error('PNG, JPG만 업로드하세요'))
         }
         callback(null, true)
@@ -231,39 +231,39 @@ app.get('/upload', function (요청, 응답) {
 })
 
 app.post('/upload', upload.single('프로필'), function (요청, 응답) {
-    응답.send('업로드완료') 
+    응답.send('업로드완료')
 })
 
-app.get('/image/:imageName', function (요청, 응답){
+app.get('/image/:imageName', function (요청, 응답) {
     응답.sendFile(__dirname + '/public/image/' + 요청.params.imageName)
 })
 
-app.post('/chatroom', function(요청, 응답){
+app.post('/chatroom', function (요청, 응답) {
 
     var 저장할거 = {
-        title : '무슨무슨채팅방',
-        member : [ObjectId(요청.body.당한사람id), 요청.user._id],
-        date : new Date()
+        title: '무슨무슨채팅방',
+        member: [ObjectId(요청.body.당한사람id), 요청.user._id],
+        date: new Date()
     }
 
-    db.collection('chatroom').insertOne(저장할거).then(function(결과){
+    db.collection('chatroom').insertOne(저장할거).then(function (결과) {
         응답.send('저장완료')
     });
 });
 
-app.get('/chat', 로그인했니, function (요청, 응답){
+app.get('/chat', 로그인했니, function (요청, 응답) {
 
-    db.collection('chatroom').find({ member : 요청.user._id }).toArray().then((res)=>{
-        응답.render('chat.ejs', { data : res })
+    db.collection('chatroom').find({member: 요청.user._id}).toArray().then((res) => {
+        응답.render('chat.ejs', {data: res})
     })
 })
 
-app.post('/message', 로그인했니, function (요청, 응답){
+app.post('/message', 로그인했니, function (요청, 응답) {
 
     var 저장할거 = {
         parent: 요청.body.parent,
         content: 요청.body.content,
-        userid : 요청.user._id,
+        userid: 요청.user._id,
         date: new Date()
     }
 
@@ -273,20 +273,27 @@ app.post('/message', 로그인했니, function (요청, 응답){
     })
 })
 
-app.get('/message/:id', 로그인했니, function (요청, 응답){
+app.get('/message/:id', 로그인했니, function (요청, 응답) {
     응답.writeHead(200, {
-        "Connection" : "keep-alive",
-        "Content-Type" : "text/event-stream",
+        "Connection": "keep-alive",
+        "Content-Type": "text/event-stream",
         "Cache-Control": "no-cache",
     })
 
-    db.collection('message').find({ parent : 요청.params.id }).toArray()
+    db.collection('message').find({parent: 요청.params.id}).toArray()
         .then((결과) => {
             응답.write('event: test\n');
             응답.write('data:' + JSON.stringify(결과) + '\n\n')
         })
 
-    응답.write('event: test\n');
-    응답.write('data: 안녕하세요\n\n');
+    const 찾을문서 = [
+        {$match: {'fullDocument.parent': 요청.params.id}}
+    ];
 
+    const changeStream = db.collection('message').watch(찾을문서);
+
+    changeStream.on('change', (result) => {
+        응답.write('event: test\n')
+        응답.write('data: ' + JSON.stringify([result.fullDocument]) + '\n\n')
+    });
 })
