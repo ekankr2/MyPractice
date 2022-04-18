@@ -1,5 +1,10 @@
 const express = require('express')
 const app = express()
+
+const http = require('http').createServer(app);
+const {Server} = require("socket.io");
+const io = new Server(http);
+
 const bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({extended: true}))
 const MongoClient = require('mongodb').MongoClient
@@ -12,7 +17,7 @@ app.use('/public', express.static('public'))
 var db;
 const {ObjectId} = require('mongodb')
 
-app.listen(8080, function () {
+http.listen(8080, function () {
     console.log('listening on 8080')
 })
 
@@ -296,4 +301,16 @@ app.get('/message/:id', 로그인했니, function (요청, 응답) {
         응답.write('event: test\n')
         응답.write('data: ' + JSON.stringify([result.fullDocument]) + '\n\n')
     });
+})
+
+app.get('/socket', function (요청, 응답) {
+    응답.render('socket.ejs')
+})
+
+io.on('connection', function (socket) {
+    console.log('유저 접속됨')
+
+    socket.on('user-send', function (data) {
+        console.log(data)
+    })
 })
