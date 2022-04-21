@@ -20,17 +20,24 @@
 <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
         <span class="navbar-brand">Navbar</span>
+        <span class="badge bg-dark">Dark 🔄</span>
         <button class="navbar-toggler" type="button">
             <span class="navbar-toggler-icon"></span>
         </button>
     </div>
 </nav>
 
-<button id="login">로그인</button>
-</body>
 <script>
-    $('#login').on('click', function () {
-        $('.black-bg').addClass('show-modal')
+    var count = 0;
+
+    $('.badge').on('click', function (){
+        count += 1
+        if (count % 2 === 1){
+            $('.badge').html('Light 🔄')
+        } else {
+            $('.badge').html('Dark 🔄')
+        }
     })
 </script>
+</body>
 </html>
