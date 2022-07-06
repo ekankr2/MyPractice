@@ -14,3 +14,10 @@ var 자식 = {}
 자식.__proto__ = 부모
 console.log(자식.name)
 
+function 학생(이름, 나이) {
+    this.name = 이름
+    this.age = 나이
+    this.sayHi = function (){
+        console.log(`안녕 나는 ${this.name}이야`)
+    }
+}
