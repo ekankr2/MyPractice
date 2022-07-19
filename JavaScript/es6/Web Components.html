@@ -7,14 +7,14 @@
 <body>
 
 <custom-input name="123"></custom-input>
-<custom-input name="이메일"></custom-input>
+<custom-input name="이름"></custom-input>
 
 <script>
 
     class 클래스 extends HTMLElement {
         connectedCallback() {
             let name = this.getAttribute('name')
-            this.innerHTML = `<label>${name}인풋이에요</label><input>`
+            this.innerHTML = `<label>${name}인풋</label><input>`
         }
         static get observedAttributes() {
             return ['name']

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<label>adsdds</label>
+
+<custom-input></custom-input>
+
+<template id="template1">
+    <label>이메일을 입력하쇼</label><input>
+    <style>label { color : red }</style>
+</template>
+
+<script>
+
+    class 클래스 extends HTMLElement {
+        connectedCallback() {
+            this.attachShadow({mode: 'open'})
+            this.shadowRoot.append(template1.content.cloneNode(true))
+
+            let el = this.shadowRoot.querySelector('label')
+            el.addEventListener('click', function (){
+                console.log('클릭함함')
+           })
+        }
+    }
+
+    customElements.define('custom-input', 클래스)
+
+    document.querySelector('#mordor').attachShadow({mode: 'open'})
+    document.querySelector('#mordor').shadowRoot.innerHTML =
+        '<p>심연에서 왔도다</p>'
+</script>
+
+</body>
+</html>
