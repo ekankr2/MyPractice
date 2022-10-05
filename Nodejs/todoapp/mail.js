@@ -2,22 +2,22 @@ const nodemailer = require('nodemailer');
 
 const mailSender = {
     // 메일발송 함수
-    sendNaver: function (param) {
+    sendNaver: function ({toEmail, title, content}) {
         var transporter = nodemailer.createTransport({
             port: 465,
             host: 'smtp.naver.com',
             secure: true,
             auth: {
-                user: 'username',
-                pass: 'password'
+                user: '아디',
+                pass: '비번'
             }
         });
         // 메일 옵션
         var mailOptions = {
             from: `"임익환" <ekankr2@naver.com>`,
-            to: 'ekankr2@medicalip.com, ycshin@medicalip.com, hskim0408@medicalip.com',
-            subject: 'test 제목',
-            text: 'Nodejs로 여러명한테 이메일보내기'
+            to: toEmail,
+            subject: title,
+            text: content
         };
 
         // 메일 발송

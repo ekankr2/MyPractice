@@ -310,7 +310,7 @@ app.get('/socket', function (요청, 응답) {
 io.on('connection', function (socket) {
     console.log(socket.id)
 
-    socket.on('room1-send', function (data){
+    socket.on('room1-send', function (data) {
         io.to('room1').emit('broadcast', data)
     })
 
@@ -329,7 +329,8 @@ app.get('/email', (요청, 응답) => {
 })
 
 app.post('/sendEmail', async (요청, 응답) => {
-    console.log(요청.body)
-    await mailer.sendNaver()
-    응답.send('전송완료')
+    const title = 요청.body.title
+    const content = 요청.body.content
+    await mailer.sendNaver({toEmail: 'ekankr2@medicalip.com', title: title, content: content})
+    응답.render('complete.ejs')
 })
