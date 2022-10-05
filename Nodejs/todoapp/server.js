@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-
+const mailer = require('./mail')
 const http = require('http').createServer(app);
 const {Server} = require("socket.io");
 const io = new Server(http);
@@ -328,6 +328,8 @@ app.get('/email', (요청, 응답) => {
     응답.render('email.ejs')
 })
 
-app.post('/sendEmail', (요청, 응답) => {
+app.post('/sendEmail', async (요청, 응답) => {
     console.log(요청.body)
+    await mailer.sendNaver()
+    응답.send('전송완료')
 })
