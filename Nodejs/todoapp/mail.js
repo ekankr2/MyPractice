@@ -2,22 +2,26 @@ const nodemailer = require('nodemailer');
 
 const mailSender = {
     // 메일발송 함수
-    sendNaver: function ({toEmail, title, content}) {
-        var transporter = nodemailer.createTransport({
+    sendNaver: function ({toEmail, title, content, replyTo}) {
+        const transporter = nodemailer.createTransport({
             port: 465,
-            host: 'smtp.naver.com',
+            host: 'smtp.worksmobile.com',
             secure: true,
             auth: {
-                user: '아디',
-                pass: '비번'
+                user: '',
+                pass: ''
             }
         });
         // 메일 옵션
-        var mailOptions = {
-            from: `"임익환" <ekankr2@naver.com>`,
+        const mailOptions = {
+            from: {
+              name: '임익환',
+              address: 'ekankr2@medicalip.com'
+            },
             to: toEmail,
             subject: title,
-            text: content
+            text: content,
+            replyTo: replyTo
         };
 
         // 메일 발송
