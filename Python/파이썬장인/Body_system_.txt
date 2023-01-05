@@ -1,0 +1,434 @@
+﻿
+<_8_Lymphoid_system name="" description="">
+  <Lymphoid_organs name="" description="">
+    <Thymus name="" description="" />
+    <Spleen name="" description="" />
+    <Palatine_tonsil_right name="" description=""></Palatine_tonsil_right>
+    <Palatine_tonsil_left name="" description="" />
+    <Pharyngeal_tonsil name="" description="" />
+  </Lymphoid_organs>
+  <Lymphatic_vessels name="" description="">
+    <Thoracic_duct name="" description=""></Thoracic_duct>
+    <Cisterna_chyli name="" description="" />
+    <Right_lymphatic_duct name="" description="" />
+    <Lymph_vessels_of_head_and_neck name="" description="" />
+    <Lymph_vessels_of_upper_limb name="" description="" />
+    <Lymph_vessels_of_thoracic_wall name="" description="" />
+    <Lymph_vessels_of_back name="" description="" />
+    <Lymph_vessels_of_abdominal name="" description="" />
+    <Lymph_vessels_of_lower_limb name="" description="" />
+  </Lymphatic_vessels>
+  <Lymph_nodes name="" description="">
+    <Lymph_nodes_of_head_and_neck name="" description="" />
+    <Lymph_nodes_of_upper_limb name="" description="" />
+    <Lymph_nodes_of_thoracic_wall name="" description="" />
+    <lymph_nodes_of_back name="" description="" />
+    <Abdominal_lymph_nodes name="" description="" />
+    <Inguinal_lymph_nodes name="" description="" />
+    <Lymph_nodes_of_lower_limb name="" description="" />
+  </Lymph_nodes>
+</_8.Lymphoid_system>
+<_9.Endocrine_system name="" description="">
+  <Thyroid_gland name="" description="" />
+  <Parathyroid_gland name="" description="" />
+  <Suprarenal_gland_right name="" description=""></Suprarenal_gland_right>
+  <Suprarenal_gland_left name="" description="" />
+</_9.Endocrine_system>
+<_11.Integumentary_system name="" description="">
+  <Integumentary_system_male name="" description="">
+    <Integumentary_system_male_right name="" description="">
+      <Skin_of_head_male_right name="" description="" />
+      <Skin_of_neck_male_right name="" description="" />
+      <Skin_of_thorax_male_right name="" description="" />
+      <Skin_of_abdomen_male_right name="" description="" />
+      <Skin_of_back_male_right name="" description="" />
+      <Skin_of_shoulder_male_right name="" description="" />
+      <Skin_of_arm_male_right name="" description="" />
+      <Skin_of_elbow_male_right name="" description="" />
+      <Skin_of_forearm_male_right name="" description="" />
+      <Skin_of_hand_male_right name="" description="" />
+      <Skin_of_pubic_male_right name="" description="" />
+      <Skin_of_penis_male_right name="" description="" />
+      <Skin_of_scrotum_male_right name="" description="" />
+      <Skin_of_thigh_male_right name="" description="" />
+      <Skin_of_knee_male_right name="" description="" />
+      <Skin_of_leg_male_right name="" description="" />
+      <Skin_of_foot_male_right name="" description="" />
+    </Integumentary_system_male_right>
+    <Integumentary_system_male_left name="" description="">
+      <Skin_of_head_male_left name="" description="" />
+      <Skin_of_neck_male_left name="" description="" />
+      <Skin_of_thorax_male_left name="" description="" />
+      <Skin_of_abdomen_male_left name="" description="" />
+      <Skin_of_back_male_left name="" description="" />
+      <Skin_of_shoulder_male_left name="" description="" />
+      <Skin_of_arm_male_left name="" description="" />
+      <Skin_of_elbow_male_left name="" description="" />
+      <Skin_of_forearm_male_left name="" description="" />
+      <Skin_of_hand_male_left name="" description="" />
+      <Skin_of_pubic_male_left name="" description="" />
+      <Skin_of_penis_male_left name="" description="" />
+      <Skin_of_scrotum_male_left name="" description="" />
+      <Skin_of_thigh_male_left name="" description="" />
+      <Skin_of_knee_male_left name="" description="" />
+      <Skin_of_leg_male_left name="" description="" />
+      <Skin_of_foot_male_left name="" description="" />
+    </Integumentary_system_male_left>
+  </Integumentary_system_male>
+  <Integumentary_system_female name="" description="">
+    <Integumentary_system_female_right name="" description="">
+      <Skin_of_head_female_right name="" description="" />
+      <Skin_of_neck_female_right name="" description="" />
+      <Skin_of_thorax_female_right name="" description="" />
+      <Skin_of_abdomen_female_right name="" description="" />
+      <Skin_of_back_female_right name="" description="" />
+      <Skin_of_shoulder_female_right name="" description="" />
+      <Skin_of_arm_female_right name="" description="" />
+      <Skin_of_elbow_female_right name="" description="" />
+      <Skin_of_forearm_female_right name="" description="" />
+      <Skin_of_hand_female_right name="" description="" />
+      <Skin_of_mons_pubis_female_right name="" description="" />
+      <Skin_of_labium_majus_female_right name="" description="" />
+      <Skin_of_thigh_female_right name="" description="" />
+      <Skin_of_knee_female_right name="" description="" />
+      <Skin_of_leg_female_right name="" description="" />
+      <Skin_of_foot_female_right name="" description="" />
+    </Integumentary_system_female_right>
+    <Integumentary_system_female_left name="" description="">
+      <Skin_of_head_female_left name="" description="" />
+      <Skin_of_neck_female_left name="" description="" />
+      <Skin_of_thorax_female_left name="" description="" />
+      <Skin_of_abdomen_female_left name="" description="" />
+      <Skin_of_back_female_left name="" description="" />
+      <Skin_of_shoulder_female_left name="" description="" />
+      <Skin_of_arm_female_left name="" description="" />
+      <Skin_of_elbow_female_left name="" description="" />
+      <Skin_of_forearm_female_left name="" description="" />
+      <Skin_of_hand_female_left name="" description="" />
+      <Skin_of_mons_pubis_female_left name="" description="" />
+      <Skin_of_labium_majus_female_left name="" description="" />
+      <Skin_of_thigh_female_left name="" description="" />
+      <Skin_of_knee_female_left name="" description="" />
+      <Skin_of_leg_female_left name="" description="" />
+      <Skin_of_foot_female_left name="" description="" />
+    </Integumentary_system_female_left>
+  </Integumentary_system_female>
+</_11.Integumentary_system>
+</_11월_4일>
+<_11월_7일>
+<_6.Digestive_system>
+  <Oral_cavity name="" description="">
+    <Maxillary_gingiva_right name="" description="" />
+    <Maxillary_gingiva_left name="" description="" />
+    <Mandibular_gingiva_right name="" description="" />
+    <Mandibular_gingiva_left name="" description="" />
+    <Teeth name="" description="">
+      <Teeth_right name="" description="">
+        <Maxillary_right_central_incisor_11 name="" description="" />
+        <Maxillary_right_lateral_incisor_12 name="" description="" />
+        <Maxillary_right_canine_13 name="" description="" />
+        <Maxillary_right_first_premolar_14 name="" description="" />
+        <Maxillary_right_second_premolar_15 name="" description="" />
+        <Maxillary_right_first_molar_16 name="" description="" />
+        <Maxillary_right_second_molar_17 name="" description="" />
+        <Maxillary_right_third_molar_18 name="" description="" />
+        <Mandibular_right_central_incisor_41 name="" description="" />
+        <Mandibular_right_lateral_incisor_42 name="" description="" />
+        <Mandibular_right_canine_43 name="" description="" />
+        <Mandibular_right_first_premolar_44 name="" description="" />
+        <Mandibular_right_second_premolar_45 name="" description="" />
+        <Mandibular_right_first_molar_46 name="" description="" />
+        <Mandibular_right_second_molar_47 name="" description="" />
+        <Mandibular_right_third_molar_48 name="" description="" />
+      </Teeth_right>
+      <Teeth_left name="" description="">
+        <Maxillary_left_central_incisor_21 name="" description="" />
+        <Maxillary_left_lateral_incisor_22 name="" description="" />
+        <Maxillary_left_canine_23 name="" description="" />
+        <Maxillary_left_first_premolar_24 name="" description="" />
+        <Maxillary_left_second_premolar_25 name="" description="" />
+        <Maxillary_left_first_molar_26 name="" description="" />
+        <Maxillary_left_second_molar_27 name="" description="" />
+        <Maxillary_left_third_molar_28 name="" description="" />
+        <Mandibular_left_central_incisor_31 name="" description="" />
+        <Mandibular_left_lateral_incisor_32 name="" description="" />
+        <Mandibular_left_canine_33 name="" description="" />
+        <Mandibular_left_first_premolar_34 name="" description="" />
+        <Mandibular_left_second_premolar_35 name="" description="" />
+        <Mandibular_left_first_molar_36 name="" description="" />
+        <Mandibular_left_second_molar_37 name="" description="" />
+        <Mandibular_left_third_molar_38 name="" description="" />
+      </Teeth_left>
+    </Teeth>
+    <Tongue name="" description="" />
+    <Lingual_septum name="" description=""></Lingual_septum>
+    <Buccal_mucosa_right name="" description=""></Buccal_mucosa_right>
+    <Buccal_mucosa_left name="" description=""></Buccal_mucosa_left>
+    <Hard_palate_right name="" description=""></Hard_palate_right>
+    <Hard_palate_left name="" description=""></Hard_palate_left>
+    <Soft_palate_right name="" description="" />
+    <Soft_palate_left name="" description="" />
+    <Uvula_right name="" description=""></Uvula_right>
+    <Uvula_left name="" description="" />
+  </Oral_cavity>
+  <Oropharynx name="" description="" />
+  <Esophagus name="" description="" />
+  <Stomach name="" description="">
+    <Anterior_wall_of_stomach name="" description="" />
+    <Posterior_wall_of_stomach name="" description="" />
+  </Stomach>
+  <Small_intestine name="" description="">
+    <Duodenum name="" description="">
+      <Anterior_wall_of_duodenum name="" description="" />
+      <Posterior_wall_of_duodenum name="" description=""></Posterior_wall_of_duodenum>
+      <Major_duodenal_papilla name="" description="" />
+      <Minor_duodenal_papilla name="" description="" />
+    </Duodenum>
+    <Jejunum name="" description="" />
+    <Ileum name="" description="" />
+  </Small_intestine>
+  <Large_intestine name="" description="">
+    <Cecum name="" description=""></Cecum>
+    <Appendix name="" description="" />
+    <Colon name="" description="">
+      <Ascending_colon name="" description="" />
+      <Transverse_colon name="" description="" />
+      <Descending_colon name="" description="" />
+      <Sigmoid_colon name="" description="" />
+    </Colon>
+    <Rectum name="" description="" />
+    <Anal_canal name="" description="" />
+  </Large_intestine>
+  <Major_salivary_glands name="" description="">
+    <Parotid_gland_right name="" description=""></Parotid_gland_right>
+    <Parotid_gland_left name="" description=""></Parotid_gland_left>
+    <Accessory_parotid_gland_right name="" description="" />
+    <Accessory_parotid_gland_left name="" description="" />
+    <Parotid_duct_right name="" description="" />
+    <Parotid_duct_left name="" description="" />
+    <Sublingual_gland_right name="" description="" />
+    <Sublingual_gland_left name="" description="" />
+    <Sublingual_duct_right name="" description="" />
+    <Sublingual_duct_left name="" description="" />
+    <Submandibular_gland_right name="" description="" />
+    <Submandibular_gland_left name="" description="" />
+    <Submandibular_duct_right name="" description="" />
+    <Submandibular_duct_left name="" description="" />
+  </Major_salivary_glands>
+  <Liver name="" description=""></Liver>
+  <Coronary_ligament name="" description=""></Coronary_ligament>
+  <Falciform_ligament name="" description=""></Falciform_ligament>
+  <Round_ligament_of_liver name="" description="" />
+  <Right_triangular_ligament name="" description="" />
+  <Left_triangular_ligament name="" description="" />
+  <Gallbladder name="" description="" />
+  <Extrahepatic_biliary_system name="" description="">
+    <Common_bile_duct name="" description="" />
+    <Cystic_duct name="" description="" />
+    <Common_hepatic_duct name="" description="" />
+    <Right_hepatic_duct name="" description="" />
+    <Left_hepatic_duct name="" description="" />
+  </Extrahepatic_biliary_system>
+  <Pancreas name="" description="">
+    <Anterior_wall_of_pancreas name="" description="" />
+    <Posterior_wall_of_pancreas name="" description="" />
+    <Pancreatic_duct name="" description="" />
+  </Pancreas>
+  <Peritoneum name="" description="" />
+</_6.Digestive_system>
+<_7.Respiratory_system name="" description="">
+  <Paranasal_sinuses name="" description="">
+    <Paranasal_sinuses_right name="" description="">
+      <Frontal_sinus_right name="" description="" />
+      <Sphenoidal_sinus_right name="" description="" />
+      <Maxillary_sinus_right name="" description="" />
+    </Paranasal_sinuses_right>
+    <Paranasal_sinuses_left name="" description="">
+      <Frontal_sinus_left name="" description="" />
+      <Sphenoidal_sinus_left name="" description="" />
+      <Maxillary_sinus_left name="" description="" />
+    </Paranasal_sinuses_left>
+  </Paranasal_sinuses>
+  <Nasal_cavity name="" description="">
+    <Nasal_cavity_right name="" description="">
+      <Lateral_wall_of_nasal_cavity_right name="" description=""></Lateral_wall_of_nasal_cavity_right>
+      <Medial_wall_of_nasal_cavity_right name="" description="" />
+      <Nasopharynx_right name="" description=""></Nasopharynx_right>
+      <Laryngopharynx_right name="" description="" />
+    </Nasal_cavity_right>
+    <Nasal_cavity_left name="" description="">
+      <Lateral_wall_of_nasal_cavity_left name="" description="" />
+      <Medial_wall_of_nasal_cavity_left name="" description="" />
+      <Nasopharynx_left name="" description="" />
+      <Laryngopharynx_left name="" description="" />
+    </Nasal_cavity_left>
+  </Nasal_cavity>
+  <Larynx name="" description="">
+    <Thyroid_cartilage name="" description=""></Thyroid_cartilage>
+    <Cricoid_cartilage name="" description="" />
+    <Epiglottic_cartilage name="" description="" />
+    <Median_thyrohyoid_ligament name="" description="" />
+    <Median_cricothyroid_ligament name="" description="" />
+    <Hyoepiglottic_ligament name="" description="" />
+    <Thyroepiglottic_ligament name="" description="" />
+    <Cricotracheal_ligament name="" description="" />
+    <Larynx_right name="" description="">
+      <Arytenoid_cartilage_right name="" description="" />
+      <Corniculate_cartilage_right name="" description="" />
+      <Thyrohyoid_membrane_right name="" description="" />
+      <Lateral_thyrohyoid_ligament_right name="" description="" />
+      <Lateral_cricothyroid_ligament_right name="" description="" />
+      <Cuneiform_cartilage_right name="" description="" />
+      <Triticeal_cartilage_right name="" description="" />
+      <Quadrangular_membrane_right name="" description="" />
+      <Vestibular_ligament_right name="" description="" />
+      <Vocal_ligament_right name="" description=""></Vocal_ligament_right>
+      <Capsule_of_cricothyroid_joint_right name="" description="" />
+      <Capsule_of_cricoarytenoid_joint_right name="" description=""></Capsule_of_cricoarytenoid_joint_right>
+    </Larynx_right>
+    <Larynx_left name="" description="">
+      <Arytenoid_cartilage_left name="" description="" />
+      <Corniculate_cartilage_left name="" description="" />
+      <Thyrohyoid_membrane_left name="" description="" />
+      <Lateral_thyrohyoid_ligament_left name="" description="" />
+      <Lateral_cricothyroid_ligament_left name="" description="" />
+      <Cuneiform_cartilage_left name="" description="" />
+      <Triticeal_cartilage_left name="" description="" />
+      <Quadrangular_membrane_left name="" description="" />
+      <Vestibular_ligament_left name="" description="" />
+      <Vocal_ligament_left name="" description=""></Vocal_ligament_left>
+      <Capsule_of_cricothyroid_joint_left name="" description="" />
+      <Capsule_of_cricoarytenoid_joint_left name="" description="" />
+    </Larynx_left>
+  </Larynx>
+  <Trachea name="" description="">
+    <Tracheal_cartilages name="" description="" />
+    <Anular_ligaments name="" description="" />
+  </Trachea>
+  <Main_bronchi name="" description="">
+    <Right_main_bronchus name="" description="">
+      <Right_superior_lobar_bronchus name="" description="">
+        <Right_apical_segmental_bronchus_B1 name="" description="" />
+        <Right_posterior_segmental_bronchus_B2 name="" description="" />
+        <Right_anterior_segmental_bronchus_B3 name="" description="" />
+      </Right_superior_lobar_bronchus>
+      <Right_intermediate_bronchus name="" description=""></Right_intermediate_bronchus>
+      <Middle_lobar_bronchus name="" description="">
+        <Lateral_segmental_bronchus_B4 name="" description="" />
+        <Medial_segmental_bronchus_B5 name="" description="" />
+      </Middle_lobar_bronchus>
+      <Right_inferior_lobar_bronchus name="" description="">
+        <Right_superior_segmental_bronchus_B6 name="" description="" />
+        <Right_medial_basal_segmental_bronchus_B7 name="" description="" />
+        <Right_anterior_basal_segmental_bronchus_B8 name="" description="" />
+        <Right_lateral_basal_segmental_bronchus_B9 name="" description="" />
+        <Right_posterior_basal_segmental_bronchus_B10 name="" description="" />
+      </Right_inferior_lobar_bronchus>
+    </Right_main_bronchus>
+    <Left_main_bronchus name="" description="">
+      <Left_superior_lobar_bronchus name="" description="">
+        <Left_superior_division_bronchus name="" description="">
+          <Left_apicoposterior_segmental_bronchus_B1_B2 name="" description="" />
+          <Left_anterior_segmental_bronchus_B3 name="" description="" />
+        </Left_superior_division_bronchus>
+        <Left_lingular_bronchus name="" description="">
+          <Left_superior_lingular_bronchus_B4 name="" description="" />
+          <Left_inferior_lingular_bronchus_B5 name="" description="" />
+        </Left_lingular_bronchus>
+      </Left_superior_lobar_bronchus>
+      <Left_inferior_lobar_bronchus name="" description="">
+        <Left_superior_segmental_bronchus_B6 name="" description="" />
+        <Left_anteromedial_basal_segmental_bronchus_B7_B8 name="" description="" />
+        <Left_lateral_basal_segmental_bronchus_B9 name="" description="" />
+        <Left_posterior_basal_segmental_bronchus_B10 name="" description="" />
+      </Left_inferior_lobar_bronchus>
+    </Left_main_bronchus>
+  </Main_bronchi>
+  <Lungs name="" description="">
+    <Right_lung name="" description="">
+      <Superior_lobe_of_right_lung name="" description="" />
+      <Middle_lobe_of_right_lung name="" description="" />
+      <Inferior_lobe_of_right_lung name="" description="" />
+    </Right_lung>
+    <Left_lung name="" description="">
+      <Superior_lobe_of_left_lung name="" description="" />
+      <Inferior_lobe_of_left_lung name="" description="" />
+    </Left_lung>
+    <Pleura_right name="" description="" />
+    <Pleura_left name="" description="" />
+  </Lungs>
+</_7.Respiratory_system>
+<_10.Urogenital_system>
+  <Urinary_system name="" description="">
+    <Kidney name="" description="">
+      <Kidney_right name="" description="">
+        <Anterior_surface_of_renal_cortex_right name="" description=""></Anterior_surface_of_renal_cortex_right>
+        <Posterior_surface_of_renal_cortex_right name="" description="" />
+        <Anterior_surface_of_renal_pyramid_right name="" description=""></Anterior_surface_of_renal_pyramid_right>
+        <Posterior_surface_of_renal_pyramid_right name="" description="" />
+        <Anterior_surface_of_renal_pelvis_right name="" description=""></Anterior_surface_of_renal_pelvis_right>
+        <Posterior_surface_of_renal_pelvis_right name="" description="" />
+      </Kidney_right>
+      <Kidney_left name="" description="">
+        <Anterior_surface_of_renal_cortex_left name="" description="" />
+        <Posterior_surface_of_renal_cortex_left name="" description="" />
+        <Anterior_surface_of_renal_pyramid_left name="" description="" />
+        <Posterior_surface_of_renal_pyramid_left name="" description="" />
+        <Anterior_surface_of_renal_pelvis_left name="" description="" />
+        <Posterior_surface_of_renal_pelvis_left name="" description="" />
+      </Kidney_left>
+    </Kidney>
+    <Ureter name="" description="" />
+    <Urinary_bladder name="" description=""></Urinary_bladder>
+    <Male_urethra name="" description="" />
+    <Female_urethra name="" description="" />
+  </Urinary_system>
+  <Male_genital_system name="" description="">
+    <Testis_right name="" description="" />
+    <Testis_left name="" description="" />
+    <Epididymis_right name="" description="" />
+    <Epididymis_left name="" description="" />
+    <Ductus_deferens_right name="" description="" />
+    <Ductus_deferens_left name="" description="" />
+    <Seminal_vesicle_right name="" description="" />
+    <Seminal_vesicle_left name="" description="" />
+    <Ejaculatory_duct_right name="" description="" />
+    <Ejaculatory_duct_left name="" description="" />
+    <Prostate name="" description="" />
+    <Corpus_cavernosum_of_penis_right name="" description="" />
+    <Corpus_cavernosum_of_penis_left name="" description=""></Corpus_cavernosum_of_penis_left>
+    <Crus_of_penis_right name="" description="" />
+    <Crus_of_penis_left name="" description="" />
+    <Corpus_spongiosum_of_penis name="" description="" />
+    <Glans_penis name="" description="" />
+    <Suspensory_ligament_of_penis name="" description="" />
+    <Fundiform_ligament_of_penis name="" description="" />
+    <Scrotum_right name="" description="" />
+    <Scrotum_left name="" description="" />
+  </Male_genital_system>
+  <Female_genital_system name="" description="">
+    <Ovary_right name="" description="" />
+    <Ovary_left name="" description="" />
+    <Uterine_tube_right name="" description="" />
+    <Uterine_tube_left name="" description="" />
+    <Uterus_right name="" description="" />
+    <Uterus_left name="" description="" />
+    <Vagina_right name="" description="" />
+    <Vagina_left name="" description="" />
+    <Labium_majus_right name="" description="" />
+    <Labium_majus_left name="" description="" />
+    <Labium_minus_right name="" description="" />
+    <Labium_minus_left name="" description="" />
+    <Clitoris name="" description="">
+      <Body_of_clitoris name="" description="" />
+      <Crus_of_clitoris_right name="" description="" />
+      <Crus_of_clitoris_left name="" description="" />
+      <Glans_of_clitoris name="" description="" />
+      <Prepuce_of_clitoris name="" description="" />
+    </Clitoris>
+    <Bulb_of_vestibule_right name="" description="" />
+    <Bulb_of_vestibule_left name="" description="" />
+    <Vestibular_gland_right name="" description="" />
+    <Vestibular_gland_left name="" description="" />
+  </Female_genital_system>
+</_10.Urogenital_system>
