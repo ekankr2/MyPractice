@@ -1,5 +1,5 @@
 # MyPractice
-```make
-Algorithm Studying, Lecture Review, HTML/CSS experiment
 
+```
+For personal study
 ```
